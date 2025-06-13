@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ object.name }}</h1>
+<ul>
+{% if object.image %}
+    <div class="image-container">
+        <img src="{{ object.image.url }}" alt="{{ object.image }}">
+    </div>
+{% endif %}
+</ul>
+<a>{{ object.description }}</a>
+<!-- <h2>Фракции:</h2> -->
+<ul>
+{% for faction in object.factions.all %}
+    <h2>Он с фракции: {{ faction.name }}</h2>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,109 @@
+[
+  {
+    "model": "core.faction",
+    "pk": 1,
+    "fields": {
+      "name": "Красная линия",
+      "short_description": "Коммунистическая фракция"
+    }
+  },
+  {
+    "model": "core.faction",
+    "pk": 2,
+    "fields": {
+      "name": "Чистота",
+      "short_description": "Крайне правая фракция"
+    }
+  },
+  {
+    "model": "core.faction",
+    "pk": 3,
+    "fields": {
+      "name": "Ганза",
+      "short_description": "Торговая организация (Кольцевая линия)"
+    }
+  },
+  {
+    "model": "core.factiondescription",
+    "pk": 1,
+    "fields": {
+      "faction": 1,
+      "full_description": "Красная линия — коммунистическая фракция метро."
+    }
+  },
+  {
+    "model": "core.factiondescription",
+    "pk": 2,
+    "fields": {
+      "faction": 2,
+      "full_description": "Чистота — фашистская фракция метро."
+    }
+  },
+  {
+    "model": "core.factiondescription",
+    "pk": 3,
+    "fields": {
+      "faction": 3,
+      "full_description": "Ганза — торговая организация Кольцевой линии."
+    }
+  },
+  {
+    "model": "core.character",
+    "pk": 1,
+    "fields": {
+      "name": "Бурбон",
+      "factions": [1],
+      "description": "Скользкий и грубоватый челнок-авантюрист с бандитскими наклонностями, повсюду имеющий «старых знакомых», которым успел задолжать денег.\n Несмотря на скверный характер и повадки типичного «пацана с района», Бурбон может дать несколько жизненно-важных советов. По собственным словам, ненамного старше Артёма. Любит блатные песни, которые частенько напевает[1]. Прозвище себе дал сам — в честь жгучего алкогольного напитка.\nИз одежды на Бурбоне вязаная шапка с налобным фонариком, видавшее виды кожаное пальто с рубахой, плотные штаны и старые потёртые башмаки. На шее висит клетчатый платок."
+    }
+  },
+  {
+    "model": "core.character",
+    "pk": 2,
+    "fields": {
+      "name": "Полицайз",
+      "factions": [2],
+      "description": ""
+    }
+  },
+  {
+    "model": "core.character",
+    "pk": 3,
+    "fields": {
+      "name": "DuBois",
+      "factions": [3],
+      "description": ""
+    }
+  },
+  {
+    "model": "core.metro",
+    "pk": 1,
+    "fields": {
+      "name": "Московский метрополитен",
+      "description": "Основное место действия в серии книг"
+    }
+  },
+  {
+    "model": "core.station",
+    "pk": 1,
+    "fields": {
+      "name": "Парк культуры",
+      "metro": 1
+    }
+  },
+  {
+    "model": "core.station",
+    "pk": 2,
+    "fields": {
+      "name": "Полис",
+      "metro": 1
+    }
+  },
+  {
+    "model": "core.station",
+    "pk": 3,
+    "fields": {
+      "name": "ВДНХ",
+      "metro": 1
+    }
+  }
+]

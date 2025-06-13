@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Метрополитены</h1>
+<ul class="list-group">
+  {% for metro in object_list %}
+    <li class="list-group-item">
+      <a href="{% url 'metro_detail' metro.pk %}">{{ metro.name }}</a>
+    </li>
+  {% empty %}
+    <li class="list-group-item">Нет метрополитенов.</li>
+  {% endfor %}
+</ul>
+{% endblock %}

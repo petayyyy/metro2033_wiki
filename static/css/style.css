@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('/static/img/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+}
+.image-container {
+  width: 400px;
+  height: 400px;
+  /* overflow: hidden; */
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.description-block {
+    max-width: 600px;        /* Максимальная ширина блока с текстом */
+    margin: 0 auto;          /* Центрирование блока по горизонтали */
+    font-size: 18px;         /* Размер шрифта (можно увеличить) */
+    line-height: 1.5;        /* Межстрочный интервал для удобства чтения */
+    text-align: center;      /* Выравнивание текста по центру */
+    padding: 10px 20px;      /* Отступы вокруг текста */
+    /* background-color: #f9f9f9; (Опционально) светлый фон для контраста */
+    border-radius: 8px;      /* (Опционально) скруглённые углы */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* (Опционально) тень для объёма */
+}
+/* Убрал фон */
+header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #444;
+    background-color: rgba(0, 0, 0, 0.7); /* полупрозрачный фон */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #f8f8f8;
+    text-shadow: 1px 1px 2px #000;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* затемнение под текстом */
+    border-radius: 10px;
+}
+
+h1, h3 {
+    color: #50a8b2;
+    margin-top: 30px;
+    text-shadow: 1px 1px 1px #000;
+}
+h2 {
+    color: #c72424;
+    margin-top: 30px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* a {
+    color: #90caf9;
+}
+
+a:hover {
+    color: #64b5f6;
+} */
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+a:focus,
+a:active {
+    outline: none;
+    box-shadow: none;
+}

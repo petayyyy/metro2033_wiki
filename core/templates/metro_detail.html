@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ object.name }}</h1>
+{% if object.description %}
+<p>{{ object.description }}</p>
+{% endif %}
+<h2>Станции:</h2>
+<ul>
+  {% for station in object.stations.all %}
+    <li>{{ station.name }}</li>
+  {% empty %}
+    <li>Нет станций.</li>
+  {% endfor %}
+</ul>
+{% endblock %}

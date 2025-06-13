@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ object.name }}</h1>
+<!-- <p>{{ object.short_description }}</p> -->
+<!-- <p>{{ object.factiondescription.full_description }}</p> -->
+<div class="description-block">
+    {{ object.factiondescription.full_description }}
+</div>
+{% endblock %}

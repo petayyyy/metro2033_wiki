@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Список фракций</h1>
+<ul>
+{% for faction in object_list %}
+    <li><a href="{% url 'faction_detail' faction.pk %}">{{ faction.name }} - {{ faction.short_description }}</a></li>
+{% empty %}
+    <li>Фракции не найдены.</li>
+{% endfor %}
+</ul>
+{% endblock %}
