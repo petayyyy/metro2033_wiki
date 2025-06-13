@@ -1,4 +1,9 @@
 ﻿# metro2033_wiki
+User:
+```bash
+admin
+admin
+```
 Start:
 ```bash
 python -m venv env_site
